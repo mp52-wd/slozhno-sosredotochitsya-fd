@@ -32,36 +32,40 @@
   --visibility: hidden;
 }
 
-.theme-light .page {
-  --color-accent: #ffc2e6;
-  --color-primary: #ff8dcb;
-  --color-secondary: #353430;
-  --color-hover: rgba(53, 52, 48, 0.4);
-  --color-shadow-big: 4px 4px 0 var(--color-primary);
-  --color-shadow-small: 2px 2px 0 var(--color-primary);
+@media (prefers-color-scheme: light) {
 
-  --bg-color: #fff1f7;
-  --bg-image: url("../images/cover-image-light.png");
+  :root {
+    --color-accent: #ffc2e6;
+    --color-primary: #ff8dcb;
+    --color-secondary: #353430;
+    --color-hover: rgba(53, 52, 48, 0.4);
+    --color-shadow-big: 4px 4px 0 var(--color-primary);
+    --color-shadow-small: 2px 2px 0 var(--color-primary);
 
-  --ff-main: 'IBM plex mono', sans-serif;
-  --fz-page: 18px;
-  --fz-text: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
+    --bg-color: #fff1f7;
+    --bg-image: url("../images/cover-image-light.png");
 
-  --decorated-zone-color: var(--color-secondary);
-  --theme-menu-color: var(--color-secondary);
-  --theme-menu-hover-color: var(--color-hover);
-  --huge-title-color: var(--color-accent);
-  --huge-text-color: var(--color-secondary);
-  --huge-text-bg: var(--color-primary);
-  --huge-shadow-color: var(--color-shadow-big);
-  --link-shadow-color: var(--color-shadow-small);
-  --std-title-text-color: var(--color-secondary);
-  --std-title-bg-color: var(--color-primary);
-  --section-title-color: var(--color-secondary);
-  --article-text-color: var(--color-secondary);
-  --link-text-color: var(--color-secondary);
+    --ff-main: 'IBM plex mono', sans-serif;
+    --fz-page: 18px;
+    --fz-text: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 
-  --gap: 10px;
+    --decorated-zone-color: var(--color-secondary);
+    --theme-menu-color: var(--color-secondary);
+    --theme-menu-hover-color: var(--color-hover);
+    --huge-title-color: var(--color-accent);
+    --huge-text-color: var(--color-secondary);
+    --huge-text-bg: var(--color-primary);
+    --huge-shadow-color: var(--color-shadow-big);
+    --link-shadow-color: var(--color-shadow-small);
+    --std-title-text-color: var(--color-secondary);
+    --std-title-bg-color: var(--color-primary);
+    --section-title-color: var(--color-secondary);
+    --article-text-color: var(--color-secondary);
+    --link-text-color: var(--color-secondary);
 
-  --visibility: hidden;
+    --gap: 10px;
+
+    --visibility: hidden;
+  }
+
 }
