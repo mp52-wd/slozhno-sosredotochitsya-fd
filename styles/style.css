@@ -43,15 +43,15 @@
 }
 
 .header__theme-menu-list {
-  padding-block-start: 20px;
+  padding-block-start: calc(var(--gap) * 2);
 }
 
 .header__theme-menu-item {
-  margin-block-end: 10px;
+  padding-block-end: var(--gap);
 }
 
 .header__theme-menu-button {
-  border: none;
+  border: 1px solid transparent; /* Fix */
   background-color: transparent;
   block-size: 26px;
   inline-size: 70px;
@@ -119,9 +119,8 @@
 }
 
 .main {
-  padding-block: calc(4 * var(--gap)) var(--gap);
+  padding-block: calc(var(--gap) * 4);
   padding-inline: var(--gap);
-  margin-block-end: calc(var(--gap) * 3);
 }
 
 .main__section {
@@ -222,6 +221,10 @@
     right: calc(var(--gap) * 5);
   }
 
+  .header .huge-title {
+    margin-inline-start: -16px;
+  }
+
   .huge-text {
     max-inline-size: calc(100% / 2);
     margin-block-end: calc(var(--gap) * 2);
@@ -229,9 +232,7 @@
   }
 
   .main {
-    margin-block-start: calc(var(--gap) * 2);
-    margin-block-end: calc(var(--gap) * 5);
-    padding-inline: var(--gap);
+    padding-block: calc(var(--gap) * 6);
   }
 
   .main__section {
@@ -242,6 +243,10 @@
     margin-block-end: calc(var(--gap) * 6);
   }
 
+  .section__title {
+    display: grid;
+  }
+
   .main__section-title {
     grid-column: 1 / 2;
     grid-row: 1 / span 2;
@@ -249,10 +254,6 @@
 
   .main__section-item {
     grid-column: 2;
-  }
-
-  .section__title {
-    width: calc(100% / 3);
   }
 
   .article_list {
@@ -348,12 +349,6 @@
     margin-block-start: calc(var(--gap) * 1.5);
   }
 
-  .main {
-    margin-block-start: calc(var(--gap) * 2);
-    margin-block-end: calc(var(--gap) * 5);
-    padding-inline: var(--gap);
-  }
-
   .main__section {
     display: grid;
     grid-template-columns: 1fr 2fr;
@@ -388,12 +383,6 @@
   .main__section-what {
     grid-template-columns: 1fr;
     column-gap: 0;
-  }
-
-
-  .main__section-galery {
-    padding-inline: var(--gap);
-    padding-block-start: calc(var(--gap)* 2);
   }
 
   .gallery-title {
@@ -431,6 +420,7 @@
 
   .footer > .huge-title {
     margin-inline-start: 0;
+    padding-block-end: calc(var(--gap) * 1.5);
   }
 
 }
