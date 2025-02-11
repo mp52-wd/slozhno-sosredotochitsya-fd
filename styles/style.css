@@ -124,6 +124,9 @@
 }
 
 .main__section {
+  display: grid;
+  column-gap: calc(var(--gap) * 2);
+  row-gap: calc(var(--gap) * 2);
   margin-block-end: calc(var(--gap) * 5);
 }
 
@@ -131,7 +134,6 @@
   display: flex;
   color: var(--section-title-color);
   font-size: var(--fz-text);
-  margin-block-end: calc(var(--gap) * 2);
 }
 
 .title-decor {
@@ -140,8 +142,9 @@
   font-size: clamp(1.125rem, 1.125rem + 0vw, 1.125rem);
 }
 
-.article__sub-title {
-  margin-block-start: calc(var(--gap) * 2);
+.article_list {
+  display: grid;
+  row-gap: calc(var(--gap) * 2);
 }
 
 .article__text {
@@ -149,7 +152,6 @@
   color: var(--article-text-color);
   line-height: 23.4px;
   margin-block-start: var(--gap);
-  margin-block-end: calc(var(--gap) * 2);
 }
 
 .inline-link {
@@ -190,11 +192,11 @@
   min-block-size: 668px;
   align-items: center;
   justify-content: center;
-  padding-block-start: var(--gap);
   position: relative;
 }
 
 .footer > .huge-title {
+  padding-block-start: var(--gap);
   text-shadow: var(--color-shadow-small);
 }
 
@@ -239,8 +241,9 @@
     display: grid;
     grid-template-columns: 1fr 2fr;
     column-gap: calc(var(--gap) * 2);
+    row-gap: calc(var(--gap) * 2);
     padding-inline: var(--gap);
-    margin-block-end: calc(var(--gap) * 6);
+    margin-block-end: calc(var(--gap) * 8);
   }
 
   .section__title {
@@ -267,11 +270,6 @@
 
   .main__section-galery {
     padding-inline: var(--gap);
-    padding-block-start: calc(var(--gap)* 2);
-  }
-
-  .gallery-title {
-    margin-block-start: 10px;
   }
 
   .images {
@@ -301,6 +299,10 @@
   .footer {
     margin: 0;
     padding-block-end: calc(var(--gap) * 2);
+  }
+
+  .footer > .huge-title {
+    padding-block-start: calc(var(--gap) * 3);
   }
 
 }
@@ -354,7 +356,7 @@
     grid-template-columns: 1fr 2fr;
     column-gap: var(--gap);
     padding-inline: var(--gap);
-    margin-block-end: calc(var(--gap) * 6);
+    margin-block-end: calc(var(--gap) * 8);
   }
 
   .main__section-title {
@@ -383,10 +385,6 @@
   .main__section-what {
     grid-template-columns: 1fr;
     column-gap: 0;
-  }
-
-  .gallery-title {
-    margin-block-start: 10px;
   }
 
   .images {
